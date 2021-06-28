@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-card>
+    <v-tollbar-title>Exercicios em Vuetify</v-tollbar-title>
+
+    <Listen />
+    <Carousel />
+  </v-card>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Listen from "@/components/Exercicio1/Listen";
+import Carousel from "@/components/Exercicio2/Carousel";
 
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
-}
+    Listen,
+    Carousel,
+  },
+};
 </script>
